@@ -12,7 +12,9 @@ import {BANNER, NATIVE, VIDEO} from '../src/mediaTypes.js';
 import {OUTSTREAM} from '../src/video.js';
 
 const BIDDER_CODE = 'vibrantmedia';
-const VIBRANT_MEDIA_PREBID_URL = 'https://prebid.intellitxt.com/prebid';
+//const VIBRANT_MEDIA_PREBID_URL = 'https://prebid.intellitxt.com/prebid';
+//const VIBRANT_MEDIA_PREBID_URL = 'http://localhost:3015/prebid';
+const VIBRANT_MEDIA_PREBID_URL = 'http://quintesse.eu.ngrok.io/prebid';
 const SUPPORTED_MEDIA_TYPES = [BANNER, NATIVE, VIDEO];
 
 /**

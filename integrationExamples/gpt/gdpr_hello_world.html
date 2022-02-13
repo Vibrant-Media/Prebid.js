@@ -80,24 +80,81 @@
   </script>
 
       <script>
-        var PREBID_TIMEOUT = 700;
-        var FAILSAFE_TIMEOUT = 2500;
+        var FAILSAFE_TIMEOUT = 330000;
+        var PREBID_TIMEOUT = 1000000;
 
         var adUnits = [{
           code: 'div-gpt-ad-1460505748561-0',
           mediaTypes: {
             banner: {
-              sizes: [[300, 250], [300,600]]
+              sizes: [[300, 250], [300,600]],
             }
           },
-
           // Replace this object to test a new Adapter!
           bids: [{
-            bidder: 'appnexus',
+            bidder: 'vibrantmedia',
             params: {
               placementId: 13144370
             }
-          }]
+          },
+            {
+              bidder: 'appnexus',
+              params: {
+                placementId: 13144370
+              }
+            },
+            {
+              bidder: 'districtmDMX',
+              params: {
+                memberid: 13144370
+              }
+            },
+            {
+              bidder: 'pubmatic',
+              params: {
+                publisherId: '13144370'
+              }
+            },
+            {
+              bidder: 'rubicon',
+              params: {
+                accountId: 13144370,
+                siteId: 13144370,
+                zoneId: 13144370
+              }
+            },
+            {
+              bidder: '33across',
+              params: {
+                siteID: 13144370,
+                productId: 'siab'
+              }
+            },
+            {
+              bidder: 'triplelift',
+              params: {
+                inventoryCode: '13144370'
+              }
+            },
+            {
+              bidder: 'medianet',
+              params: {
+                cid: '13144370',
+                crid: 'siab'
+              }
+            },
+            {
+              bidder: 'rhythmone',
+              params: {
+                placementId: '13144370'
+              }
+            },
+            {
+              bidder: 'sovrn',
+              params: {
+                tagid: '13144370'
+              }
+            }]
 
         }];
 
